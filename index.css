@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f8ff;
+  height: 80vh;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+  margin:  auto;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 20px;
+  
+}
+
+.header {
+  display: flex; /* Enable flexbox layout */
+  align-items: center; /* Vertically center items */
+  gap: 1rem; /* Space between image and text */
+  height: 3rem; /* Set fixed height */
+  padding: 0 1rem; /* Add horizontal padding */
+}
+
+.header img {
+  height: 100%; /* Make image fill header height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Prevent image distortion */
+}
+
+.header h1 {
+  margin: 0; /* Remove default heading margins */
+  font-size: 1.2rem; /* Adjust font size proportionally */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.speakers {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Ensure it can be adjusted relative to its normal position */
+  /* bottom: -50px; Adjust this value to control how much it overlaps the footer */
+  justify-content: center;
+  align-items: center;
+  align-items:center;
+
+
+}
+
+.speaker-profile {
+  display: flex;
+  margin: 10px 0 10px;
+
+  justify-content: space-around;
+
+  border: 2px solid #f5a623;
+  border-radius: 20px;
+  text-align: start;
+  width: 95%;
+}
+/* .about {
+  margin-right: 20%;
+} */
+.speaker-profile h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.speaker-profile img {
+  border-radius: 20px;
+  width:10%;
+  object-fit: contain;
+}
+hr {
+  border-top: 2px solid #f5a623;
+}
+
+.speaker-card {
+  border-radius: 30px;
+  height: auto;
+  position: relative;
+  z-index: 1;
+  width: 95%;
+
+  top: 40px;
+  /* height: 20rem; */
+  text-align: left;
+  background-color: #1a7252;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.speaker-facts {
+  /* width: 10%; */
+  margin: 20px;
+}
+.achievements {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  
+}
+
+.footer {
+  color: #4a148c;
+  background-color: #f5a623;
+  height: 10rem;
+  display: flex;
+  /* justify-content: center; */
+width: 100%;
+  position: relative; 
+  z-index: 0; 
+  justify-content: center;
+  align-items: center;
+  align-items:center;
+ 
+}
+
+.footer a {
+  color: #4a148c;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+.styled-div {
+    width: 100%; /* Set the width of the div */
+    height: auto; /* Adjust height to fit content */
+    border: 1px solid #ccc; /* Add a subtle border */
+    border-radius: 8px; /* Add rounded corners */
+    padding: 16px; /* Add some padding for space inside the div */
+
+  }
+
+  .styled-div ul {
+    list-style-type: disc; /* Make it a bulleted list */
+    padding-left: 20px; /* Add space for the bullets */
+    margin: 0; /* Remove default margin */
+  }
+
+  .styled-div li {
+    line-height: 1.5; /* Increase line height for readability */
+  }
+
+  .styled-div strong {
+    color: #333; /* Bold text color for emphasis */
+  }
+  @media screen and (max-width: 1030px) {
+    .speaker-profile {
+      flex-direction: column;
+      align-items: center; /* Optional: to center the content vertically */
+      text-align: center; /* Optional: to adjust the text alignment for narrow screens */
+    }
+    .speaker-card{
+        flex-direction: column;
+        align-items: center; /* Optional: to center the content vertically */
+        text-align: center; /* Optional: to adjust the text alignment for narrow screens */
+
+    }
+    .speaker-profile img{
+        margin-top: 10px;
+    }
+  }
